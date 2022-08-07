@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "sportlive-tv-4",
+    "name": "睇波LIVE",
     "slug": "sportlive-tv-4",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -14,17 +14,24 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+        "backgroundColor": "#505050"
+      },
+      "intentFilters": [
+        {
+          "action": "MAIN",
+          "data": {},
+          "category": ["LEANBACK_LAUNCHER", "LAUNCHER"]
+        }
+      ],
+      "package": "com.workmichaelma.sportlivetv4",
+      "useNextNotificationsApi": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
